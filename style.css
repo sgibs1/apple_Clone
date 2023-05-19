@@ -1,0 +1,401 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+/*               End of Setup             */
+body {
+  background-color: #fbfbfd;
+}
+
+header {
+  background-color: #333;
+  justify-content: center;
+}
+
+header nav {
+  display: block;
+  height: 44px;
+}
+
+#logo {
+  margin-left: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav li:not(:last-child) {
+  margin-right: 75px;
+}
+
+nav li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hero-container {
+  display: block;
+}
+
+.hero-description {
+  margin: 50px auto 0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+
+h1 {
+  font-family: "Myriad Set Pro";
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Myriad Set Pro";
+  font-size: 25px;
+  margin-top: 20px
+}
+
+h3 {
+  font-family: "Myriad Set Pro";
+  margin-top: 20px;
+  font-size: 25px;
+  display: inline-block;
+  font-weight: 300;
+}
+
+h3 a {
+  text-decoration: none;
+}
+
+.hero-img {
+  background: url(./images/hero_iphone_13pro.jpg) center;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: -190px;
+}
+
+.sub-hero {
+  margin-top: 30px;
+}
+
+.sub-hero .item {
+  height: 200px;
+  width: 25%;
+  display: inline-block;
+  background-position: center;
+}
+
+#watch {
+  background-image: url(images/watch_large.jpg);
+}
+
+#ipad {
+  background-image: url(images/ipad_pro_large.jpg);
+}
+
+#accessories {
+  background-image: url(images/accessories_large.jpg);
+}
+
+#macbook {
+  background-image: url(./images/macbook_large.jpg);
+}
+
+.recall {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.recall h4 {
+  font-family: "Myriad Set Pro";
+  font-size: 20px;
+}
+
+h4 a {
+  text-decoration: none;
+}
+footer {
+  background-color: #f2f2f2;
+  display: block;
+}
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+.col {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+ h5{
+  margin-top: 23px;
+ }
+ h6 {
+  margin-top: 8px;
+ }
+ h5 a{
+  font-family: "Myriad Set Pro";
+  text-decoration: none;
+  color: #636363;
+  font-weight: bold;
+  font-size: 13px;
+ }
+ h6 a {
+  font-family: "Myriad Set Pro";
+  text-decoration: none;
+  color: #8a8a8a;
+  font-size: 13px;
+ }
+
+ .footer-details {
+  margin-top: 30px;
+  padding-bottom: 40px;
+ }
+
+ .footer-details p {
+  font-family: "Myriad Set Pro";
+  font-size: 12px;
+  color: #8a8a8a;
+  font-weight: 400;
+ }
+ .contact-number a{
+  text-decoration: none;
+ }
+
+ hr.divider {
+  border-top: 1px solid #d6d6d6;
+  border-radius: 5px;
+ }
+ .copyright {
+  display: inline-block;
+  padding-right: 20px;
+ }
+
+ .footer-details h6 {
+  display: inline-block;
+  border-right: 1px solid #d6d6d6;
+  padding-right: 5px;
+ }
+
+ .us-logo {
+  font-family: "Myriad Set Pro";
+  text-decoration: none;
+  color: #8a8a8a;
+  font-size: 13px;
+  float: right;
+ }
+
+ .contact-number a:visited { 
+  text-decoration: none;
+  color: #0000EE
+ } 
+ .sub-hero a:visited { 
+  text-decoration: none;
+  color: #0000EE
+ } 
+
+ .hero-description  a:visited { 
+  text-decoration: none;
+  color: #0000EE
+ } 
